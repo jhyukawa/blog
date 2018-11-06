@@ -124,6 +124,11 @@ p {
   color: white;
 }
 
+.post-game img{
+  height: 350px;
+  width: 500px;
+}
+
 .about-author img{
   height: 150px;
   width: 150px;

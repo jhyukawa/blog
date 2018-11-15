@@ -18,6 +18,54 @@
     </div>
 <!-- Content -->
     <div id="content">
+<!-- 7th Post -->
+    <div class="post-container">
+      <div class="post">
+        <div class="post-author">
+          <img src="me.png">
+          <span>Jordan</span>
+        </div>
+        <p class="post-date"><em>November 11, 2018</em></p>
+        <h3 class="post-title">Testing JavaScript</h3>
+        <div class="post-content">
+          <p>
+            <script src="todaysdate.js"></script>
+          </p>
+          <p id="datetoday"></p>
+          <script>
+            var d = new Date();
+            document.getElementById("datetoday").innerHTML = d.toDateString();
+          </script>
+          <p>
+            Finally... It has been about two weeks since I first said I was
+            learning JavaScript and I have now learned enought to add
+            something to my blog. The <a href="https://getmimo.com"
+            target="_blank"> Mimo </a> lesson didn't really even explain how to
+            add my JavaScript functions to HTML. I have all this knowlege about
+            how to create variables and loops but I had no idea how to save a
+            function into a file and connect it into my blog.
+          </p>
+          <p>
+            But enough ranting, let me explain what I was able to do. I figured
+            out that there are three ways to add JavaScript to HTML:
+          </p>
+          <ol type="1">
+            <li>Create a seperate JavaScript file and have an HTML line of code
+              that points to the JS file</li>
+            <li>Add the JavaScript code directly into the HTML file within the
+               script & /script tags</li>
+            <li>Pay a web developer to do it for you</li>
+          </ol>
+          <p>
+            In case you were wondering, I didn't accidentally display the date
+            twice. The first date uses the first method that I listed and the
+            second date has the script directly in the HTML code. Both scripts I
+            wrote should update to display the date that you are vistiting the
+            blog so I will have to check back tomorrow to see if it works
+          </P>
+        </div>
+      </div>
+    </div>
 <!-- 6th Post -->
       <div class="post-container">
         <div class="post">
@@ -47,7 +95,7 @@
               better games and maybe even get into the video industy. My
               girlfriend says she is proud of my progress and is really impressed
               by the blog and my first game. Hopefully I will keep progressing
-              in my journey to become a software engineer. 
+              in my journey to become a software engineer.
             </p>
             <h3><a href="poorMansMario.html"> Poor Man's Mario Game</a></h3>
           </div>

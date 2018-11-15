@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <title>First Game Poor Man's Mario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Explore Unity</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
+
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/FakeMario.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer",
+      "Build/FakeMario.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Explore Unity</div>
+<!-- Header -->
+    <div id="header">
+      <div class="container">
+        <a id="header-title" href="index.html">Jordan's Blog</a>
+        <ul id="header-nav">
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:jordanyukawa@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+<!-- Game -->
+<div id="content">
+  <div class="post-container">
+      <div class="post-content">
+        <div class="webgl-content">
+          <div id="gameContainer" style="width: 1000px; height: 580px">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">Explore Unity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="column">
+          <h4>My Links</h4>
+          <p>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <br>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+          </p>
+        </div>
+        <div class="column">
+          <h4>My Story</h4>
+          <p>Hi there! I'm an aspiring software engineer.</p>
+        </div>
       </div>
     </div>
   </body>

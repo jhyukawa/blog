@@ -56,6 +56,12 @@ a:hover {
   display: inline;
 }
 
+.webgl-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
 .post-container:nth-child(even) {
   background-color: #f2f2f2;
 }

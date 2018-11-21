@@ -3,6 +3,7 @@
   <head>
     <title>Jordan's Blog</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="getGifWebAddress.js"></script>
   </head>
   <body>
 <!-- Header -->
@@ -17,7 +18,57 @@
       </div>
     </div>
 <!-- Content -->
-    <div id="content">
+   <div id="content">
+<!-- 8th Post -->
+    <div class="post-container">
+      <div class="post">
+        <div class="post-author">
+          <img src="me.png">
+          <span>Jordan</span>
+        </div>
+        <p class="post-date"><em>November 20, 2018</em></p>
+        <h3 class="post-title">Integrating with Web APIs</h3>
+        <div class="post-content">
+          <p>
+            This by far has been the most difficult part to add to my blog. It
+            took me two days just to figure out how to connect to the API for
+            <a href="https://giphy.com/" target="_blank">Giphy</a>. During the
+            first day I had no idea what was and wasn't working. That's when I
+            figured out the importance of using console.log to show what few
+            parts of my code actually work. I was finally able to send the
+            request by changing the async to false.
+          </p>
+          <p>
+            Once I got a JSON response, I used console.log to figure out how to
+            get the embed URL from all the data that was sent back. I was happy
+            that I was finally able to figure it out but my work on this project
+            was not complete. I received a message on the console that said
+            Synchronous request are a no no so I needed to figure out how to
+            change it to an Asynchronous request. Unfortunately, when I changed
+            async to true, the code stoped working completely. A couple
+            days and a couple dozen articles later I was able to format the
+            request to work while async is true.
+          <p>
+            Together with JavaScript and <a href="https://giphy.com">Giphy's</a>
+            APIs I am able to give to you this random Gif generator. All you
+            need to do is click the button and enjoy all the funny Gifs that
+            <a href="https://giphy.com">Giphy</a> has to offer.
+          </p><br>
+          <p>
+            <iframe id="gifWebAddress" width="480"
+            height="270" frameBorder="0" class="giphy-embed" allowFullScreen>
+            </iframe>
+          </p>
+          <p>
+            <button class="gifButton" onclick="myfunction()">New Random Gif</button>
+          </p>
+          <script>
+            var gifURL = "https://giphy.com/embed/7JEwVo3VigNLKSUYEf";
+            document.getElementById("gifWebAddress").src=gifURL;
+          </script>
+        </div>
+      </div>
+    </div>
 <!-- 7th Post -->
     <div class="post-container">
       <div class="post">
